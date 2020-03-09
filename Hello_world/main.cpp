@@ -74,7 +74,7 @@ int Run() // our primary message loop - essentially an infinite loop
 	{
 		if (bRet == -1)
 		{
-			MessageBox(0, "GetMessage FAILED", "Error", MB_OK);
+			MessageBox(0, "GetMessage FAILED", "Error", MB_OK); // function used to display information like error to the user
 			break;
 		}
 		else
