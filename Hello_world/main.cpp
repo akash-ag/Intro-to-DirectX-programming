@@ -1,4 +1,4 @@
-// the followinf code creates a window and displays "Hello, World!" when the user clicks on it
+// the following code creates a window and displays "Hello, World!" when the user clicks on it
 #include <Windows.h>
 
 HWND ghMainWnd = 0; // the handle to the window we will be creating
@@ -66,7 +66,7 @@ bool InitWindowsApp(HINSTANCE instanceHandle, int show)
 
 int Run() // our primary message loop - essentially an infinite loop
 {
-	MSG msg = { 0 };
+	MSG msg = { 0 }; // this message is the action type like mouse click, quit etc.
 
 	BOOL bRet = 1;
 	while ((bRet == GetMessage(&msg, 0, 0, 0)) != 0) // checks and pulls events from the event queue
