@@ -69,7 +69,7 @@ int Run() // our primary message loop - essentially an infinite loop
 	MSG msg = { 0 }; // this message is the action type like mouse click, quit etc.
 
 	BOOL bRet = 1;
-	while ((bRet == GetMessage(&msg, 0, 0, 0)) != 0) // checks and pulls events from the event queue
+	while ((bRet = GetMessage(&msg, 0, 0, 0)) != 0) // checks and pulls events from the event queue
 												     // refer to the publisher/subscriber deisgn pattern for more details
 	{
 		if (bRet == -1)
